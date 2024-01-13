@@ -352,7 +352,7 @@ const main = () => {
 
             const coins = [{
                 denom: 'usei',
-                amount: new BigNumber(group.unit_price).plus(new BigNumber(lighthouseConfig.fee)).toString()
+                amount: new BigNumber(group.unit_price).plus(new BigNumber(0)).toString()
             }];
 
 
