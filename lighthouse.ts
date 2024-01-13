@@ -356,7 +356,7 @@ const main = () => {
             }];
 
 
-            const mintReceipt = await client.execute(firstAccount.address, getLighthouseContract(config.network), mintMsg, "auto", "", coins)
+            const mintReceipt = await client.execute(firstAccount.address, getLighthouseContract(config.network), mintMsg, "auto", "", undefined)
 
             spinner.succeed("NFT minted")
             console.log("Transaction hash: " + chalk.green(mintReceipt.transactionHash))
